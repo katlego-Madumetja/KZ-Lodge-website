@@ -1,73 +1,110 @@
-# Welcome to your Lovable project
+# KZ Lodge Luxe – Marketing Website
 
-## Project info
+A modern, responsive single-page marketing website for **KZ Lodge**, built with a contemporary React stack.  
+The project focuses on performance, clean UI, and maintainable structure, suitable for real-world deployment and future expansion.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🔗 Live Preview
+> (Add link here when deployed – e.g. Vercel / Netlify)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🧠 Project Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+This website showcases accommodation offerings, amenities, events, and contact information for KZ Lodge in Hammanskraal, South Africa.
 
-Changes made via Lovable will be committed automatically to this repo.
+Key goals:
+- High-conversion landing experience
+- Clean visual hierarchy
+- Mobile-first responsiveness
+- Scalable code structure for future features (bookings, galleries, CMS integration)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Vite** – fast development & build tooling
+- **React** – component-based UI
+- **TypeScript** – type safety & maintainability
+- **Tailwind CSS** – utility-first styling
+- **shadcn/ui** – accessible, reusable UI components
+- **Framer Motion** – animations and transitions
+- **React Router** – client-side routing
+- **TanStack Query** – data-fetching foundation (ready for API integration)
 
-Follow these steps:
+---
+
+## 📁 Project Structure (Simplified)
+src/
+├── main.tsx # App entry point
+├── app/
+│ └── App.tsx # App providers & routing
+├── pages/
+│ ├── Home.tsx
+│ └── NotFound.tsx
+├── features/
+│ └── landing/
+│ ├── LandingPage.tsx
+│ └── sections/
+│ ├── Hero.tsx
+│ ├── Amenities.tsx
+│ ├── Experience.tsx
+│ ├── Events.tsx
+│ └── Testimonials.tsx
+├── components/
+│ ├── layout/
+│ │ └── Footer.tsx
+│ └── ui/ # shadcn-ui components
+├── assets/
+│ └── images
+
+This structure separates:
+- **routing (`pages`)**
+- **features (`features`)**
+- **shared UI & layout (`components`)**
+
+---
+
+## 🚀 Getting Started (Local Development)
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm
+
+### Setup
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+git clone <YOUR_REPO_URL>
+cd kz-lodge-luxe
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+The app will run at: http://localhost:8080
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Deployment
 
-**Use GitHub Codespaces**
+The project can be deployed easily on platforms such as:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Vercel
 
-## What technologies are used for this project?
+Netlify
 
-This project is built with:
+Cloudflare Pages
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Build command: npm run build
 
-## How can I deploy this project?
+dist/
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+Design & Development Notes
 
-Yes, you can!
+Fully responsive layout
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Component-based architecture
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Asset handling via Vite (src/assets)
+
+Alias imports configured (@/ → src/)
+
+SEO-ready structure for future enhancement

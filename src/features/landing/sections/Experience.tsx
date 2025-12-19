@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import poolImage from "@/assets/pool-night.jpg";
-import braaiImage from "@/assets/braai-area.jpg";
-import roomImage from "@/assets/room-interior.jpg";
+import poolImage from "@/assets/images/pool-night.jpg";
+import braaiImage from "@/assets/images/braai-area.jpg";
+import roomImage from "@/assets/images/room-interior.jpg";
 
 const Experience = () => {
   const experiences = [

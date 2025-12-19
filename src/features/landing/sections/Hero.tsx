@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
-import heroImage from "@/assets/hero-lodge.jpg";
+import heroImage from "@/assets/images/hero-lodge.jpg";
 
 const Hero = () => {
   return (

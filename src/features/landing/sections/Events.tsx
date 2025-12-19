@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
-import braaiImage from "@/assets/braai-area.jpg";
+import braaiImage from "@/assets/images/braai-area.jpg";
 
 const Events = () => {
   const features = [
